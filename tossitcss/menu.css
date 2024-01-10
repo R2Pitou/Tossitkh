@@ -1,0 +1,72 @@
+.menu-nav {
+  margin-top: 15px;
+}
+.menu-nav a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.menu-nav a:hover {
+  color: green;
+}
+.menu-container {
+  margin-top: 40px;
+}
+.row-item-x {
+  gap: 10px;
+}
+.container .deliver-container {
+  margin-top: 50px;
+}
+.deliver-container h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.deliver-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+.deliver-btn button {
+  border: none;
+  background-color: black;
+  border-radius: 5px;
+  font-size: 1em;
+  height: 40px;
+  width: 140px;
+}
+.deliver-btn a {
+  color: white;
+}
+.deliver-btn a:hover,
+.deliver-btn a:active {
+  color: #39db4a;
+}
+.item-x {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+}
+.menu-name-x {
+  margin-top: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1em;
+}
+.menu-price-x {
+  margin-top: -10px;
+  font-size: 1em;
+}
