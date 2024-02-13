@@ -1,5 +1,4 @@
-import { SaladMenu, WrapMenu, mueslisMenu, sidesMenu } from "./menu.js";
-import { formatCurrency } from "./moneyconvert.js";
+import { SaladMenu, WrapMenu, sidesMenu } from "./menu.js";
 
 function renderMenu(menu) {
   let menuHTML = "";
@@ -8,11 +7,10 @@ function renderMenu(menu) {
     menuHTML += `
       <div class="col item-x">
         <div>
-          <img src="${item.img}" width="100px" />
+          <img src="${item.img}" width="100px" alt="${item.name}"/>
         </div>
         <div>
           <p class="menu-name-x">${item.name}</p>
-          <p class="menu-price-x">$${formatCurrency(item.priceCents)}</p>
         </div>
       </div>`;
   });
@@ -26,10 +24,6 @@ document.querySelector(".salad-js").addEventListener("click", () => {
 
 document.querySelector(".wrap-js").addEventListener("click", () => {
   renderMenu(WrapMenu);
-});
-
-document.querySelector(".muesli-js").addEventListener("click", () => {
-  renderMenu(mueslisMenu);
 });
 
 document.querySelector(".side-js").addEventListener("click", () => {
